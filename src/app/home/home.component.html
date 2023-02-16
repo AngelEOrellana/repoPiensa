@@ -1,0 +1,297 @@
+<router-outlet>
+    <div id="container1" class="contenedor_principal">
+        <header class="header">
+            <section class="sec_header" id="sec_header1">                
+                <img src="../../assets/logo4.png">
+                <h1>Control de Producción</h1>                                                                              
+            </section>
+           
+            <div id="teoria" class="teoria">
+                <a [routerLink]="['/detalle']" >Desarrollo Teórico de la Aplicación </a> 
+            </div>                   
+        </header>
+
+        <div class="titulopagina">            
+            <h2>Desarrollo de una aplicación web para el control y programación de ordenes de producción</h2>
+        </div>
+
+        <!-- resumen -->
+        <section class="contenido1">                                 
+            <p >
+                En la actualidad los ERP son las mayores herramientas en el control de las actividades de una
+                empresa; estos son los mejores aliados para los gerentes,
+                administradores y contadores, sin embargo, el área o departamento de producción está un poco
+                relegada y los procesos se llevan de la mejor manera,
+                pero de la mas optima. La idea de esta aplicación es, en base a la experiencia en los procesos,
+                investigación y análisis, aminorar la carga de trabajo,
+                disminuir el riesgo de errores y optimizar el tiempo laboral de los operarios y jefes de producción.
+                Mediante algoritmos y parámetros se van a programar
+                las actividades de producción, tomando como base las necesidades especificas de cada empresa o nicho
+                de negocio. La aplicación será un modulo que se
+                adjuntará al ERP o sistema que pudiese tener la empresa, caso contrario la información necesaria
+                será ingresada de forma ágil, pero en ambos casos con
+                la facilidad de encontrar el módulo en línea para su ejecución en cualquier localidad. Empleando
+                SCRUM y sus ventajas la realización de la aplicación
+                será dinámica y la retroalimentación que proporcione dará robustez a la misma. Se espera cubrir las
+                necesidades de un área fundamental y que hoy en día
+                necesita de agilidad, optimización y efectividad en sus procesos.
+            </p>            
+           
+            <img id="imagenResumen" src="../../assets/produccion1.jpg" alt="produccion">
+           
+        </section>
+
+        <section class="procesos" id="sec_listaProcesos">
+            <h2>
+                Procesos de la aplicación web
+            </h2>
+
+            <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#sec_Ingreso_datos_inicial">
+                    Ingreso de datos de empresa, plantas de producción, centros de trabajo, áreas de trabajo, departamentos                   
+                </a>
+            </h4>
+
+            <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#sec_CreacionUsuarios">
+                    Creación de usuarios
+                </a>
+            </h4>
+
+            <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#sec_CreacionProcesos">
+                    Creación de procesos de producción y sus actividades
+                </a>
+            </h4>
+            <!-- <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#">
+                    VENTANA DE CREACION DE ACTIVIDADES
+                </a>
+            </h4> -->
+            <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#sec_CreacionParametros">                    
+                    Ingreso de parámetros para el calculo de la prioridad de producción
+                </a>
+            </h4>
+            <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#sec_DatosConsulta">
+                    Ingreso de datos de consulta
+                </a>
+            </h4>
+            <!-- <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#">
+                    VENTANA DE CONFIGURACION DE AREAS DE TRABAJO
+                </a>
+            </h4> -->
+            <!-- <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#">
+                    Ingreso de pronósticos de ventas de productos
+                </a>
+            </h4> -->
+            <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#sec_CreacionProductos">          
+                    Creación de productos, categorías, grupos, líneas, marcas y unidades de producto
+                </a>
+            </h4>
+            <!-- <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#">
+                    Configuración de maquinaria con los centros de trabajo
+                </a>
+            </h4> -->
+            <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#sec_Tiempos">
+                    Toma de tiempo unitario de producción de producto
+                </a>
+            </h4>
+            <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#sec_OrdenesProd">
+                    Creación de ordenes de producción
+                </a>
+            </h4>
+            <h4>
+                <img src="../../assets/vineta2.png" alt="Viñeta">
+                <a href="#sec_Existencias">
+                    Validación de existencias de materia prima y solicitud de orden de compra
+                </a>
+            </h4>
+        </section>
+
+        <br>
+
+        <!-- seccion de imagenes -->
+        <section  style="display:none;"  >
+            <div class="tira_images">
+                <img src="../../assets/orden_compra1.png" width="200px" alt="orden de produccion">
+                <img src="../../assets/almacenage1.jpeg" width="200px" alt="linea de produccion">
+                <img src="../../assets/almacenage1.jpeg" width="200px" alt="linea de produccion">
+                <img src="../../assets/almacenage1.jpeg" width="200px" alt="linea de produccion">
+            </div>
+        </section>
+
+        <br>
+
+        <section class="sec_img_texto" id="sec_Ingreso_datos_inicial">
+            <h4 class="cl_h4">               
+                Ingreso de datos de empresa, plantas de producción, centros de trabajo, áreas de trabajo, departamentos, roles de usuario etc.
+            </h4>
+
+            <img src="../../assets/config_inicial2.jpg" width="300px" alt="">
+            <p>
+                La aplicación estará en la capacidad de funcionar junto a otra aplicación principal, como un ERP, que la pondría a nivel de un 
+                módulo mas, sin embargo será posible que esta funcione de forma independiente configurando los siguientes parámetros de: <br> 
+                <br>
+                    - Empresa <br>
+                    - Plantas de producción<br>
+                    - Centros de trabajo<br>
+                    - Áreas de trabajo<br>
+                    - Departamentos, etc. <br>
+                <br>
+                Con esta información ingresada se iniciará el proceso de actividades en el sistema.
+            </p>
+            <a class="back" href="#sec_listaProcesos">Volver al inicio</a>
+        </section>
+
+        <section class="sec_img_texto" id="sec_CreacionUsuarios">
+            <h4 class="cl_h4">
+                Creación de usuarios
+            </h4>
+
+            <img src="../../assets/crearusuario1.png" width="300px" alt="">
+            <p>
+                A la aplicación se podrá ingresar teniendo en cuenta el "rol" y las actividades que el usuario desarrolle, para lo cual 
+                se restringe el acceso a ciertas ventanas, por ejemplo, a la ventana de planificación de producción tendra acceso solamente
+                el jefe de produccón. 
+            </p>
+            <a class="back" href="#sec_listaProcesos">Volver al inicio</a>
+        </section>        
+
+        <section class="sec_img_texto" id="sec_CreacionProcesos">
+            <h4 class="cl_h4">
+                Ingreso de procesos de producción y actividades
+            </h4>
+
+            <img src="../../assets/procesosproductivos1.jpg" alt="procesos productivo">
+            <p>
+                Esta contemplado en la aplicación el control sobre los procesos de producción y sus actividades, tomando diferentes parametros 
+                fundamentales como el tiempo que toma realizar cada actividad y poder proyectar con certeza el tiempo que puede tomar producir 
+                un producto en específico.
+            </p>
+            <a class="back" href="#sec_listaProcesos">Volver al inicio</a>
+        </section>
+
+        <section class="sec_img_texto" id="sec_CreacionParametros">
+            <h4 class="cl_h4">
+                Ingreso de parámetros para el calculo de la prioridad de producción
+            </h4>
+
+            <img src="../../assets/prioridades1.png" alt="prioridades diagrama">
+            <p>
+               Pensando en la optimización del tiempo de trabajo empleado en la programación de las ordenes de producción por parte del 
+               usuario, se estructuró un proceso semi-automático con el cual, de acuerdo a parámetros analizados por las gerencias de ventas 
+               y producción, la prioridad de atención para producir un item será calculada por parte de la aplicación. De esta forma la desición
+               de que producto se va a producir va a tener por detrás un analisis ya realizado.
+            </p>
+            <a class="back" href="#sec_listaProcesos">Volver al inicio</a>
+        </section>
+
+
+        <section class="sec_img_texto" id="sec_DatosConsulta">
+            <h4 class="cl_h4">
+                Ingreso de datos de consulta
+            </h4>
+
+            <img src="../../assets/cargardatos1.png" alt="banco de datos">
+            <p>
+               La aplicación esta diseñada para adecuarse a dos tipos de ingreso de datos para poder realizar la programación de las ordenes de producción.
+               Por un lado se puede recepcionar una banco de datos respetando una estructura específica que se guardara
+               en la base de datos de forma automática o manual. Tomar en cuenta que los datos
+               no se reemplazaran sino que se adicionaran a la anterior controlando los datos analizados con la fecha de ingreso en la base de datos.
+               Para la segunda forma de ingreso tomaremos como origen de datos los pronósticos de venta proyectados en diferentes horizontes
+               de los items que estan disponibles a la venta. 
+            </p>
+            <a class="back" href="#sec_listaProcesos">Volver al inicio</a>
+        </section>
+        
+
+        <section class="sec_img_texto" id="sec_CreacionProductos">
+            <h4 class="cl_h4">
+                Creación de productos, categorías, grupos, líneas, marcas y unidades de producto
+            </h4>
+
+            <img src="../../assets/datosproducto1.png" alt="productos">
+            <p>
+               Tal cual se indica, la aplicación tendra una ventana en donde se creen nuevos productos en la base de datos, con lo necesario
+               para su adecuada consulta y administración. De igual manera se tendra una ventana en donde todos los datos como categoría, línea,
+               marca, grupo y unidad de producto seran creados y administrados.
+            </p>
+            <a class="back" href="#sec_listaProcesos">Volver al inicio</a>
+        </section>
+
+        
+        <section class="sec_img_texto" id="sec_Tiempos">
+            <h4 class="cl_h4">
+                Toma de tiempo unitario de producción de producto
+            </h4>
+
+            <img src="../../assets/tiempos2.jpg" alt="tiempos estandar">
+            <p>
+              Esta ventana es escencial para la programación de las ordenes de producción pues nos permite obtener el tiempo estimado 
+              que tomaría producir una cantidad de items en un centro de trabajo específico.              
+              Podemos tener una proyección de las producciones a realizarse.
+            </p>
+            <a class="back" href="#sec_listaProcesos">Volver al inicio</a>
+        </section>
+
+        <section class="sec_img_texto" id="sec_OrdenesProd">
+            <h4 class="cl_h4">
+                Creación de ordenes de producción
+            </h4>
+
+            <img src="../../assets/ordenprod2.webp" alt="orden de produccion">
+            <p>
+              Ya casi al final del proceso llega la generación de la orden de producción, la cual puede ser ingresada manualmente, o 
+              se generara automaticamente a travez del proceso en el cual se le asigna la prioridad al producto a producir.
+              Tomar en cuenta que antes de realizar la orden se debe chequear que los items que componen la materia prima del producto final
+              esten dispobibles y que haya la cantidad necesaria de los mismos.
+            </p>
+            <a class="back" href="#sec_listaProcesos">Volver al inicio</a>
+        </section>
+        
+        <section class="sec_img_texto" id="sec_Existencias">
+            <h4 class="cl_h4">
+                Validación de existencias de materia prima y solicitud de orden de compra
+            </h4>
+
+            <img src="../../assets/existencias2.png" alt="control inventario">
+            <p>
+             Finalmente la validación de que exista la cantidad necesaria de materia prima para que la orden producción pueda ser 
+             generada de forma automática. Además este proceso debe indicar que productos estan faltando para poder realizar después 
+             una solicitud de orden de compra al departamento de compras.
+            </p>
+            <a class="back" href="#sec_listaProcesos">Volver al inicio</a>
+        </section>
+        
+        <section class="footer" id="sec_piePagina" >
+            <h4 class="cl_h4">
+                Copyright 2022 - 2023
+            </h4>
+            <img src="../../assets/copylogo1.png" >
+            <!-- <img id="imginsta1" src="../../assets/instagran1.png" >
+            <img id="imginsta1" src="../../assets/facebook2.png" > -->
+
+        </section>
+    </div>  
+
+</router-outlet>
